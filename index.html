@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <title>Bootstrap 4 Course Class 5 - Floats Elements and Fixed Positions</title>
+</head>
+<body>
+
+<br><br>
+
+<h1 class="float-none">float-none Element.</h1>
+<!--Si queremos que nuestro Elemento no tenga ninguna "Flotación" Personalizada sino que tenga la Por Defecto, le ponemos la Clase "float-none" que es lo mismo que no poner nada.-->
+    
+<br><br>
+
+<h1 class="float-left">float-left Element.</h1>
+<!--Si queremos que nuestro Elemento esté "Flotando" hacia la Izquierda, usamos la Clase "float-left", aunque no tiene mucho sentido ya que 
+por defecto los Elementos están Alineados/Flotando a la Izquierda y también lo está con la Clase "float-none" que vimos anteriormente.-->
+    
+<br><br>
+
+<h1 class="float-right">float-right Element.</h1>
+<!--Si queremos que nuestro Elemento esté Alineado/Flotando a la Derecha, usamos la Clase "float-right".-->
+   
+<br><br>
+    
+<p class="float-sm-right" style="background-color: grey;"><strong>If the Screen is Small Size, this will be a float-right Element.</strong></p>
+<br><br>
+<p class="float-md-right" style="background-color: grey;"><strong>If the Screen is Medium Size, this will be a float-right Element.</strong></p>
+<br><br>
+<p class="float-lg-right" style="background-color: grey;"><strong>If the Screen is Large Size, this will be a float-right Element.</strong></p>
+<br><br>
+<p class="float-xl-right" style="background-color: grey;"><strong>If the Screen is Extra Large Size, this will be a float-right Element.</strong></p>
+<!--Para un Diseño de Página Web Adaptable/Adaptativo(Responsive Web Design) que se ADAPTE a los diferentes Dispositivos y Tamaños de Pantalla que puedan visitar nuestra página, podemos cambiar la
+Ubicación/"Flotación" del Elemento dependiendo del Tamaño de la Pantalla Usando las Clases "float-("sm" para Pequeño, "md" para Medio, "lg" para Grande o "xl" para Extra Grande)-("none", "left" o "right")".
+Ej:_ "float-sm-right" para Ubicar/"Hacer Flotar" un Elemento a la Derecha si el Tamaño de la Pantalla es Pequeño.-->
+
+<br><br>
+
+<div style="background-color: lightgreen;">
+<button class="btn btn-primary float-left">float-left Button</button>
+<p>This DIV has the 2 Buttons inside it and a "background-color: lightgreen;" but not all elements have a light green background color despite being in the same DIV, this DIV does not have the class="clearfix".</p>
+<button class="btn btn-primary float-right">float-right Button</button>
+</div>
+<!--Uno de los principales problemas con la estructura de HTML es que si se tiene un Elemento Secundario (Como estos 2 Botones y el Párrafo) dentro del Elemento Primario o Elemento Contenedor (Como este DIV), 
+el Elemento Secundario "Flota" automáticamente alrededor del Elemento Primario, NO DENTRO de él.
+La solución a este problema es usar la propiedad "clear" de CSS. Bootstrap nos permite usar una Clase llamada "clearfix" que se usa poner el Contenido Flotante de un Contenedor DENTRO del mismo, y ya no alrededor 
+de él. +-Ejemplo 1 aquí arriba: Sin la class="clearfix". En la anterior demostración, dos Botones flotan uno a la Izquierda otro y a la Derecha, pero no ambos tienen el Color de Fondo Verde Claro 
+(style="background-color: lightgreen;").-->
+
+<br><br>
+
+<div class="clearfix" style="background-color: lightgreen;">
+<button class="btn btn-secondary float-left">float-left Button</button>
+<p>This DIV has the 2 Buttons inside it and a "background-color: lightgreen;" and ALL the Elements inside have a Light Green Background Color, this DIV has the class="clearfix".</p>
+<button class="btn btn-secondary float-right">float-right Button</button>
+</div>
+<!--+-Ejemplo 2 aquí arriba: Como aquí se puede ver, todos los Elemntos Secundarios dentro del Elemento Primario o Elemento Contenedor CON la clase class="clearfix" comparten TODOS el Color de Fondo Verde Claro 
+(style="background-color: lightgreen;").-->
+
+<br><br>
+
+<h3 class="fixed-top">Navbar Example</h3>
+<!--Si queremos que algún Elemento se quede FIJO (fixed) Arriba de Todo (Top), como por Ejemplo una Barra de Navegación de la Página (Navigation Bar, Navbar), usamos la Clase class="fixed-top".-->
+
+<br><br>
+
+<h3 class="sticky-top" style="background-color: orangered;">________________________Sticky Top Element Example</h3>
+<!--Si queremos que algún Elemento que está en medio del Cuerpo (body) de la Página se quede FIJO (fixed) Arriba de Todo (Top) cuando bajamos por debajo de Donde este Elemnto se Encuentra y vuelva a su
+lugar una vez que volvamos a Subir, usamos la Clase class="sticky-top".-->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequuntur, obcaecati qui officiis dolore magnam, ipsam quis incidunt fugiat, quisquam eligendi molestias. Fugit perferendis sint quos, sequi cupiditate sunt ex.</p>
+
+<h3 class="fixed-bottom" style="background-color: yellow;">Fixed Footer Example (Normally Footers aren't Fixed)</h3>
+<!--Si queremos que algún Elemento se quede FIJO (fixed) Abajo de Todo (Bottom), como por Ejemplo un Pie de Página (Footer), usamos la Clase class="fixed-bottom", aunque Normalmente los Piés de Página no
+están FIJADOS, si no que simplemente aparecen al llegar al fondo inferior de la Página.-->
+
+
+
+
+<!-- Si utilizamos componentes de Bootstrap que requieran Javascript agregar estos tres archivos -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
